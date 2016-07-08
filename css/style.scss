@@ -1,0 +1,44 @@
+$lightGrey: #ccc;
+$mediumGrey: #666;
+$darkGrey: #333;
+$navy: #036;
+$white: #fff;
+$turquoise: #366;
+$orange: #c30;
+$rust: #a52900;
+$black: #000;
+
+
+@import 'reset.css';
+@import '../zealOpticsStyleGuide/css/style.css';
+body {
+    padding: 0;
+    margin: 0;
+    background: white;
+    background-color:white;
+    box-sizing: border-box;
+    font-family: "Interstate", Helvetica, Arial, sans-serif;
+    letter-spacing: .025em;
+    color: $darkGrey;
+    line-height: 1.5;
+    font-size: 16px;
+    width:100%;
+}
+
+//fix only using important here since this is for mockup purposes actual version will fill image with js and hero header will be able to accomidate h3 above h1 
+.heroHeader{
+    background-image: url(../img/ecRidesWithZeal.jpeg)!important;
+    background-size: cover;
+    h1{
+        padding-top:0px!important;
+    }
+    h3{
+        padding-top:350px;
+        color:white;
+    }
+}
+
+    
+
+
+    
