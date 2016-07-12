@@ -1,0 +1,518 @@
+@import url(reset.css);
+body {
+  padding: 0;
+  margin: 0;
+  background: white;
+  background-color: white;
+  box-sizing: border-box;
+  font-family: "Interstate", Helvetica, Arial, sans-serif;
+  letter-spacing: .025em;
+  color: #333;
+  line-height: 1.5;
+  font-size: 16px;
+  width: 100%; }
+
+* {
+  box-sizing: inherit; }
+
+.patternBG {
+  background-image: url("../img/nice_snow.png");
+  background-repeat: repeat; }
+
+.main {
+  width: 100%;
+  max-width: 1680px;
+  margin: 0 auto;
+  background-color: white;
+  padding-bottom: 5em; }
+
+a {
+  font-family: "Interstate", sans-serif;
+  color: #666;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1em;
+  padding: 1em;
+  transition: color 0.5s ease; }
+
+a:hover {
+  color: #036; }
+
+a:active {
+  color: #036; }
+
+.styleGuideHeader {
+  color: white;
+  background-color: #036;
+  padding: 200px 0; }
+
+.exampleLink {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1000px;
+  display: flex; }
+  .exampleLink a {
+    width: auto;
+    display: block;
+    margin: 0 auto; }
+
+.typography, .color, .components {
+  padding: 3em 0; }
+
+h1, h2, h3, h4, h5, h6, h7 {
+  font-family: "Interstate",Helvetica,Arial,sans-serif;
+  margin: 0;
+  display: block;
+  line-height: normal;
+  word-wrap: break-word;
+  padding: 1em 0em;
+  text-align: center;
+  background-color: transparent;
+  margin: 0 auto;
+  color: #333; }
+
+h1 {
+  font-weight: bold;
+  font-size: 6em;
+  letter-spacing: .025em;
+  text-transform: uppercase; }
+
+h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 4em;
+  letter-spacing: 0; }
+
+h3 {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 3em;
+  letter-spacing: 0; }
+
+h4 {
+  font-weight: bold;
+  font-size: 2em;
+  letter-spacing: .05em; }
+
+h5 {
+  font-weight: normal;
+  font-size: 2em;
+  letter-spacing: .025em; }
+
+h6 {
+  font-weight: bold;
+  font-size: 1em;
+  letter-spacing: .025em; }
+
+h7 {
+  font-weight: normal;
+  font-size: 1em;
+  letter-spacing: 0; }
+
+strong {
+  font-weight: bold; }
+
+p {
+  font-size: 1em;
+  color: #333;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 1em; }
+  p .eighteen {
+    font-size: 18px; }
+
+.center {
+  text-align: center; }
+
+.right {
+  text-align: right; }
+
+.footerText {
+  font-size: 1em;
+  color: white;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1em;
+  background-color: #366; }
+
+.heroHeader {
+  background-image: url("../img/hero.jpg");
+  background-size: cover; }
+  .heroHeader h1 {
+    padding: 350px 0;
+    color: white; }
+
+.standAloneButton {
+  background: #c30;
+  color: white;
+  padding: 1em 2em;
+  margin: 30px auto 0px auto;
+  text-align: center;
+  display: table;
+  width: auto;
+  font-size: 1em;
+  transition: background-color 0.5s ease; }
+
+.standAloneButton:hover {
+  background-color: #b20;
+  color: white; }
+
+.standAloneButton:active {
+  background-color: #b20;
+  color: white; }
+
+.overlayButtonBackground {
+  width: 600px;
+  height: 400px;
+  margin: 20px auto;
+  background-image: url(../img/camping.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.overlayButton {
+  background: white;
+  color: #036;
+  padding: 1em 2em;
+  margin: 30px auto;
+  text-align: center;
+  display: table;
+  width: auto;
+  font-size: 1em;
+  border-style: solid;
+  border-color: #036;
+  border-width: 2px;
+  transition: border 0.5s ease;
+  transition: color 0.5s ease; }
+
+.overlayButton:hover {
+  border-color: #000;
+  color: #000; }
+
+.overlayButton:active {
+  border-color: #000;
+  color: #000; }
+
+.fullSizeCard {
+  width: 100%;
+  max-width: 1680px;
+  padding: 60px 0px;
+  text-align: center; }
+  .fullSizeCard .top {
+    height: auto;
+    width: 100%; }
+    .fullSizeCard .top iframe {
+      width: 100%;
+      max-width: 1200px;
+      height: 800px;
+      padding-top: 60px; }
+  .fullSizeCard .bottom {
+    width: 100%;
+    max-width: 1200px;
+    padding: 10px 0px 60px 0px;
+    margin: 0 auto; }
+    .fullSizeCard .bottom .title {
+      width: 100%;
+      text-align: left;
+      padding: 5px;
+      text-transform: none; }
+    .fullSizeCard .bottom .description {
+      width: 100%;
+      font-size: 1.5rem;
+      text-align: left;
+      padding: 5px; }
+
+.nonFullSizeCardSection {
+  width: 100%;
+  max-width: 1680px;
+  padding: 20px 0px;
+  text-align: center;
+  display: flex; }
+  .nonFullSizeCardSection .nonFullSizeCard {
+    font-size: 1rem;
+    padding: 20px;
+    flex-basis: 50%;
+    flex-flow: row wrap;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box; }
+    .nonFullSizeCardSection .nonFullSizeCard .top {
+      height: auto;
+      width: 100%; }
+      .nonFullSizeCardSection .nonFullSizeCard .top iframe {
+        width: 100%;
+        max-width: 1200px;
+        height: 800px;
+        padding-top: 60px; }
+      .nonFullSizeCardSection .nonFullSizeCard .top img {
+        width: 100%;
+        height: 100%; }
+    .nonFullSizeCardSection .nonFullSizeCard .bottom {
+      width: 100%;
+      max-width: 1200px;
+      padding: 10px 0px 60px 0px;
+      margin: 0 auto; }
+      .nonFullSizeCardSection .nonFullSizeCard .bottom .title {
+        font-size: 3rem;
+        width: 100%;
+        text-align: left;
+        padding: 5px;
+        text-transform: none; }
+      .nonFullSizeCardSection .nonFullSizeCard .bottom .description {
+        width: 100%;
+        font-size: 1.5rem;
+        text-align: left;
+        padding: 5px; }
+
+.topPromoBar {
+  background: #366;
+  width: 100%;
+  height: auto;
+  font-family: "Interstate", Helvetica, Arial, sans-serif;
+  text-transform: uppercase; }
+  .topPromoBar a {
+    width: auto;
+    text-align: center;
+    margin: 0 auto;
+    display: block; }
+    .topPromoBar a span {
+      color: white;
+      text-align: center; }
+  .topPromoBar .btnClose {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    display: block;
+    box-sizing: border-box; }
+    .topPromoBar .btnClose button {
+      height: 16px;
+      width: 16px;
+      text-indent: -9999px;
+      border: 0 none; }
+
+.intro {
+  background-image: url("../img/nice_snow.png");
+  background-repeat: repeat;
+  width: 100%;
+  height: auto;
+  padding: 5rem 1rem;
+  margin: 0; }
+  .intro img {
+    margin: 0 auto;
+    display: block;
+    text-align: center; }
+  .intro h3 {
+    padding: .5em; }
+  .intro p {
+    max-width: 750px;
+    width: 100%;
+    text-align: left;
+    margin: 0 auto;
+    display: block;
+    padding: 5px 0;
+    color: #036; }
+  .intro .splitParagraph {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    padding: 10px; }
+    .intro .splitParagraph p {
+      max-width: 600px;
+      flex-basis: 50%;
+      flex-flow: row wrap; }
+  .intro ul {
+    list-style-type: disc;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 10px 0px; }
+  .intro ol {
+    list-style-type: decimal;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 10px 0px; }
+    .intro ol li {
+      margin-left: 20px; }
+  .intro .inlineLink {
+    padding: 0;
+    color: #036; }
+
+.containedPageBreak .splitParagraph {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  padding: 10px;
+  padding-left: 40px; }
+  .containedPageBreak .splitParagraph .half {
+    padding: 10px;
+    max-width: 600px;
+    flex-basis: 50%;
+    flex-flow: row wrap; }
+    .containedPageBreak .splitParagraph .half ol {
+      list-style-type: decimal; }
+.containedPageBreak .upper {
+  text-transform: uppercase; }
+
+.productLineup {
+  width: 100%;
+  text-align: center;
+  background-color: #fff;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center; }
+  .productLineup .product {
+    flex-basis: 33.33%;
+    align-content: flex-start;
+    box-sizing: border-box;
+    display: block;
+    padding: 20px; }
+    .productLineup .product img {
+      align-content: flex-start;
+      flex-basis: 100%;
+      width: 100%;
+      height: 100%; }
+    .productLineup .product .featured {
+      flex-basis: 50%; }
+    .productLineup .product .description {
+      display: flex;
+      width: auto;
+      flex-flow: row wrap;
+      justify-content: flex-start;
+      align-items: flex-start; }
+      .productLineup .product .description .title {
+        width: 100%;
+        flex-flow: row wrap;
+        display: inline-block;
+        font-size: 1.5em;
+        flex-basis: auto;
+        flex-grow: 0;
+        text-align: center; }
+      .productLineup .product .description .descriptionText {
+        flex-basis: 33.33%;
+        flex-flow: row wrap;
+        display: inline-block;
+        font-size: 1.5em;
+        flex-basis: auto;
+        flex-grow: 0;
+        text-align: left;
+        font-weight: bold; }
+      .productLineup .product .description .price {
+        width: 100%;
+        flex-flow: row wrap;
+        display: inline-block;
+        font-size: 1.5em;
+        flex-basis: auto;
+        flex-grow: 0;
+        text-align: center; }
+      .productLineup .product .description .was {
+        width: 50%;
+        flex-flow: row wrap;
+        display: inline-block;
+        font-size: 1.5em;
+        flex-basis: auto;
+        flex-grow: 0;
+        text-align: right;
+        justify-content: flex-end;
+        text-decoration: line-through;
+        padding-right: 10px; }
+      .productLineup .product .description .now {
+        width: 50%;
+        flex-flow: row wrap;
+        display: inline-block;
+        font-size: 1.5em;
+        flex-basis: auto;
+        flex-grow: 0;
+        text-align: left;
+        justify-content: flex-end;
+        padding-left: 10px;
+        color: red; }
+
+.color {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 20px;
+  background-color: white; }
+  .color .colorBox {
+    flex-basis: 50%;
+    background-color: white;
+    height: auto;
+    padding: 20px;
+    display: flex; }
+    .color .colorBox .lightGrey, .color .colorBox .mediumGrey, .color .colorBox .darkGrey, .color .colorBox .navy, .color .colorBox .turquoise, .color .colorBox .black, .color .colorBox .whiteAndNavy, .color .colorBox .whiteAndBlack, .color .colorBox .orange, .color .colorBox .rust {
+      padding: 20px;
+      height: 400px;
+      flex-basis: 100%; }
+    .color .colorBox p, .color .colorBox .lightGrey, .color .colorBox .mediumGrey, .color .colorBox .darkGrey, .color .colorBox .navy, .color .colorBox .turquoise, .color .colorBox .black, .color .colorBox .whiteAndNavy, .color .colorBox .whiteAndBlack, .color .colorBox .orange, .color .colorBox .rust {
+      margin: 0 auto;
+      color: white;
+      font-size: 32px;
+      padding: 10px; }
+    .color .colorBox .wHover {
+      padding: 20px;
+      height: 400px;
+      flex-basis: 50%;
+      flex-flow: row nowrap; }
+    .color .colorBox .whiteAndNavy {
+      background-color: white;
+      border-style: solid;
+      border-color: #036;
+      border-width: 4px; }
+      .color .colorBox .whiteAndNavy p {
+        color: #036; }
+    .color .colorBox .whiteAndBlack {
+      background-color: white;
+      border-style: solid;
+      border-color: black;
+      border-width: 4px; }
+      .color .colorBox .whiteAndBlack p {
+        color: black; }
+    .color .colorBox .lightGrey {
+      background-color: #ccc; }
+    .color .colorBox .mediumGrey {
+      background-color: #666; }
+    .color .colorBox .darkGrey {
+      background-color: #333; }
+    .color .colorBox .navy {
+      background-color: #036; }
+    .color .colorBox .turquoise {
+      background-color: #366; }
+    .color .colorBox .orange {
+      background-color: #c30; }
+    .color .colorBox .rust {
+      background-color: #a52900; }
+    .color .colorBox .black {
+      background-color: #000; }
+
+@media screen and (max-width: 991px) and (min-width: 500px) {
+  body {
+    font-size: 12px; }
+    body p {
+      font-size: 14px; }
+    body .productLineup .product {
+      flex-basis: 50%; }
+    body .productLineup .featured {
+      flex-basis: 100%; }
+    body .main .containedPageBreak .splitParagraph .half {
+      flex-basis: 100%; } }
+@media screen and (max-width: 499px) {
+  body {
+    font-size: 10px; }
+    body p {
+      font-size: 12px; }
+    body .productLineup .product {
+      flex-basis: 50%; }
+    body .productLineup .featured {
+      flex-basis: 100%; }
+    body .main .containedPageBreak .splitParagraph .half {
+      flex-basis: 100%;
+      width: 100%; } }
+
+/*# sourceMappingURL=style.css.map */
